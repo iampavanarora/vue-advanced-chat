@@ -44,23 +44,13 @@
 			</div> -->
 			<div
 				class="vac-message-image"
+				:class="{ 'vac-file-container-progress': file.progress >= 0 }"
+				@click="openFile($event, file, 'download')"
 				:style="{
 					'background-image': `url('${file.preview}')`,
-					'max-height': `${70}px`
+					'max-height': `${255}px`
 				}"
 			>
-				<transition name="vac-fade-image">
-					<div class="vac-image-buttons">
-						<div
-							class="vac-svg-button vac-button-download"
-							@click="openFile($event, 'download')"
-						>
-							<slot :name="'document-icon_' + message._id">
-								<svg-icon name="document" />
-							</slot>
-						</div>
-					</div>
-				</transition>
 			</div>
 		</div>
 

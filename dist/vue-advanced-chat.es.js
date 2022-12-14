@@ -27578,11 +27578,10 @@ const _sfc_main$6 = {
   }
 };
 const _hoisted_1$6 = { class: "vac-message-files-container" };
-const _hoisted_2$4 = { class: "vac-image-buttons" };
+const _hoisted_2$4 = ["onClick"];
 function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_message_file = resolveComponent("message-file");
   const _component_progress_bar = resolveComponent("progress-bar");
-  const _component_svg_icon = resolveComponent("svg-icon");
   const _component_format_message = resolveComponent("format-message");
   return openBlock(), createElementBlock("div", _hoisted_1$6, [
     (openBlock(true), createElementBlock(Fragment, null, renderList($options.imageVideoFiles, (file, i) => {
@@ -27619,28 +27618,13 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
           style: { top: "44px" }
         }, null, 8, ["progress"])) : createCommentVNode("", true),
         createBaseVNode("div", {
-          class: "vac-message-image",
+          class: normalizeClass(["vac-message-image", { "vac-file-container-progress": file.progress >= 0 }]),
+          onClick: ($event) => $options.openFile($event, file, "download"),
           style: normalizeStyle({
             "background-image": `url('${file.preview}')`,
-            "max-height": `${70}px`
+            "max-height": `${255}px`
           })
-        }, [
-          createVNode(Transition, { name: "vac-fade-image" }, {
-            default: withCtx(() => [
-              createBaseVNode("div", _hoisted_2$4, [
-                createBaseVNode("div", {
-                  class: "vac-svg-button vac-button-download",
-                  onClick: _cache[1] || (_cache[1] = ($event) => $options.openFile($event, "download"))
-                }, [
-                  renderSlot(_ctx.$slots, "document-icon_" + $props.message._id, {}, () => [
-                    createVNode(_component_svg_icon, { name: "document" })
-                  ])
-                ])
-              ])
-            ]),
-            _: 3
-          })
-        ], 4)
+        }, null, 14, _hoisted_2$4)
       ]);
     }), 128)),
     createVNode(_component_format_message, {
@@ -27649,7 +27633,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
       users: $props.roomUsers,
       "text-formatting": $props.textFormatting,
       "link-options": $props.linkOptions,
-      onOpenUserTag: _cache[2] || (_cache[2] = ($event) => _ctx.$emit("open-user-tag", $event))
+      onOpenUserTag: _cache[1] || (_cache[1] = ($event) => _ctx.$emit("open-user-tag", $event))
     }, null, 8, ["message-id", "content", "users", "text-formatting", "link-options"])
   ]);
 }
