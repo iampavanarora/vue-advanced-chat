@@ -6457,7 +6457,7 @@ function linkifyResult(array) {
   });
   return result;
 }
-const IMAGE_TYPES = ["png", "jpg", "jpeg", "webp", "svg", "gif"];
+const IMAGE_TYPES = ["png", "jpg", "jpeg", "webp", "svg", "gif", "pdf"];
 const VIDEO_TYPES = ["mp4", "video/ogg", "webm", "quicktime"];
 const AUDIO_TYPES = ["mp3", "audio/ogg", "wav", "mpeg"];
 const _sfc_main$n = {
