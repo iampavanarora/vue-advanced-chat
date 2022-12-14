@@ -25,7 +25,7 @@
 				:progress="file.progress"
 				:style="{ top: '44px' }"
 			/>
-			<div
+			<!-- <div
 				class="vac-file-container"
 				:class="{ 'vac-file-container-progress': file.progress >= 0 }"
 				@click="openFile($event, file, 'download')"
@@ -41,6 +41,26 @@
 				<div v-if="file.extension" class="vac-text-ellipsis vac-text-extension">
 					{{ file.extension }}
 				</div>
+			</div> -->
+			<div
+				class="vac-message-image"
+				:style="{
+					'background-image': `url('${file.preview}')`,
+					'max-height': `${70}px`
+				}"
+			>
+				<transition name="vac-fade-image">
+					<div class="vac-image-buttons">
+						<div
+							class="vac-svg-button vac-button-download"
+							@click="openFile($event, 'download')"
+						>
+							<slot :name="'document-icon_' + message._id">
+								<svg-icon name="document" />
+							</slot>
+						</div>
+					</div>
+				</transition>
 			</div>
 		</div>
 

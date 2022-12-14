@@ -5362,9 +5362,9 @@ const _sfc_main$q = {
 };
 const _hoisted_1$q = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
 const _hoisted_2$n = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
-const _hoisted_3$j = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
-const _hoisted_4$h = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
-const _hoisted_5$b = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
+const _hoisted_3$i = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
+const _hoisted_4$g = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
+const _hoisted_5$a = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
 const _hoisted_6$7 = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
 function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, {
@@ -5386,13 +5386,13 @@ function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
           _hoisted_2$n
         ]) : createCommentVNode("", true),
         $props.type === "message-file" ? renderSlot(_ctx.$slots, "spinner-icon-message-file_" + $props.messageId, { key: 2 }, () => [
-          _hoisted_3$j
+          _hoisted_3$i
         ]) : createCommentVNode("", true),
         $props.type === "room-file" ? renderSlot(_ctx.$slots, "spinner-icon-room-file", { key: 3 }, () => [
-          _hoisted_4$h
+          _hoisted_4$g
         ]) : createCommentVNode("", true),
         $props.type === "messages" ? renderSlot(_ctx.$slots, "spinner-icon-messages", { key: 4 }, () => [
-          _hoisted_5$b
+          _hoisted_5$a
         ]) : createCommentVNode("", true),
         $props.type === "infinite-messages" ? renderSlot(_ctx.$slots, "spinner-icon-infinite-messages", { key: 5 }, () => [
           _hoisted_6$7
@@ -5497,7 +5497,7 @@ const _sfc_main$p = {
 };
 const _hoisted_1$p = ["viewBox"];
 const _hoisted_2$m = ["id", "d"];
-const _hoisted_3$i = ["id", "d"];
+const _hoisted_3$h = ["id", "d"];
 function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -5515,7 +5515,7 @@ function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
       key: 0,
       id: $options.svgId,
       d: $data.svgItem[$props.name].path2
-    }, null, 8, _hoisted_3$i)) : createCommentVNode("", true)
+    }, null, 8, _hoisted_3$h)) : createCommentVNode("", true)
   ], 8, _hoisted_1$p);
 }
 var SvgIcon = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p]]);
@@ -6457,7 +6457,7 @@ function linkifyResult(array) {
   });
   return result;
 }
-const IMAGE_TYPES = ["png", "jpg", "jpeg", "webp", "svg", "gif", "pdf"];
+const IMAGE_TYPES = ["png", "jpg", "jpeg", "webp", "svg", "gif"];
 const VIDEO_TYPES = ["mp4", "video/ogg", "webm", "quicktime"];
 const AUDIO_TYPES = ["mp3", "audio/ogg", "wav", "mpeg"];
 const _sfc_main$n = {
@@ -6591,8 +6591,8 @@ const _sfc_main$n = {
 };
 const _hoisted_1$n = { class: "vac-image-link-container" };
 const _hoisted_2$k = { class: "vac-image-link-message" };
-const _hoisted_3$h = ["innerHTML"];
-const _hoisted_4$g = ["innerHTML"];
+const _hoisted_3$g = ["innerHTML"];
+const _hoisted_4$f = ["innerHTML"];
 function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_svg_icon = resolveComponent("svg-icon");
   return openBlock(), createElementBlock("div", {
@@ -6653,7 +6653,7 @@ function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
               ], 64)) : (openBlock(), createElementBlock("span", {
                 key: 2,
                 innerHTML: message.value
-              }, null, 8, _hoisted_3$h))
+              }, null, 8, _hoisted_3$g))
             ]),
             _: 2
           }, 1032, ["class", "href", "target", "rel", "onClick"]))
@@ -6662,7 +6662,7 @@ function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2)) : (openBlock(), createElementBlock("div", {
       key: 1,
       innerHTML: $options.formattedContent
-    }, null, 8, _hoisted_4$g))
+    }, null, 8, _hoisted_4$f))
   ], 2);
 }
 var FormatMessage = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n]]);
@@ -6885,9 +6885,9 @@ const _sfc_main$m = {
 };
 const _hoisted_1$m = { class: "vac-room-container" };
 const _hoisted_2$j = { class: "vac-name-container vac-text-ellipsis" };
-const _hoisted_3$g = { class: "vac-title-container" };
-const _hoisted_4$f = { class: "vac-room-name vac-text-ellipsis" };
-const _hoisted_5$a = {
+const _hoisted_3$f = { class: "vac-title-container" };
+const _hoisted_4$e = { class: "vac-room-name vac-text-ellipsis" };
+const _hoisted_5$9 = {
   key: 1,
   class: "vac-text-date"
 };
@@ -6925,13 +6925,13 @@ function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
         }, null, 4)) : createCommentVNode("", true)
       ]),
       createBaseVNode("div", _hoisted_2$j, [
-        createBaseVNode("div", _hoisted_3$g, [
+        createBaseVNode("div", _hoisted_3$f, [
           $options.userStatus ? (openBlock(), createElementBlock("div", {
             key: 0,
             class: normalizeClass(["vac-state-circle", { "vac-state-online": $options.userStatus === "online" }])
           }, null, 2)) : createCommentVNode("", true),
-          createBaseVNode("div", _hoisted_4$f, toDisplayString($props.room.roomName), 1),
-          $props.room.lastMessage ? (openBlock(), createElementBlock("div", _hoisted_5$a, toDisplayString($props.room.lastMessage.timestamp), 1)) : createCommentVNode("", true)
+          createBaseVNode("div", _hoisted_4$e, toDisplayString($props.room.roomName), 1),
+          $props.room.lastMessage ? (openBlock(), createElementBlock("div", _hoisted_5$9, toDisplayString($props.room.lastMessage.timestamp), 1)) : createCommentVNode("", true)
         ]),
         createBaseVNode("div", {
           class: normalizeClass(["vac-text-last", {
@@ -7177,8 +7177,8 @@ const _hoisted_2$i = {
   id: "rooms-list",
   class: "vac-room-list"
 };
-const _hoisted_3$f = ["id", "onClick"];
-const _hoisted_4$e = {
+const _hoisted_3$e = ["id", "onClick"];
+const _hoisted_4$d = {
   key: 0,
   id: "infinite-loader-rooms"
 };
@@ -7257,11 +7257,11 @@ function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
               };
             })
           ]), 1032, ["current-user-id", "room", "text-formatting", "link-options", "text-messages", "room-actions"])
-        ], 10, _hoisted_3$f);
+        ], 10, _hoisted_3$e);
       }), 128)),
       createVNode(Transition, { name: "vac-fade-message" }, {
         default: withCtx(() => [
-          $props.rooms.length && !$props.loadingRooms ? (openBlock(), createElementBlock("div", _hoisted_4$e, [
+          $props.rooms.length && !$props.loadingRooms ? (openBlock(), createElementBlock("div", _hoisted_4$d, [
             createVNode(_component_loader, {
               show: $data.showLoader,
               infinite: true,
@@ -7365,12 +7365,12 @@ const _sfc_main$k = {
 };
 const _hoisted_1$k = { class: "vac-room-header vac-app-border-b" };
 const _hoisted_2$h = { class: "vac-room-wrapper" };
-const _hoisted_3$e = {
+const _hoisted_3$d = {
   key: 0,
   class: "vac-room-selection"
 };
-const _hoisted_4$d = ["id"];
-const _hoisted_5$9 = ["onClick"];
+const _hoisted_4$c = ["id"];
+const _hoisted_5$8 = ["onClick"];
 const _hoisted_6$5 = { class: "vac-selection-button-count" };
 const _hoisted_7$5 = { class: "vac-text-ellipsis" };
 const _hoisted_8$3 = { class: "vac-room-name vac-text-ellipsis" };
@@ -7396,7 +7396,7 @@ function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
       createBaseVNode("div", _hoisted_2$h, [
         createVNode(Transition, { name: "vac-slide-up" }, {
           default: withCtx(() => [
-            $props.messageSelectionEnabled ? (openBlock(), createElementBlock("div", _hoisted_3$e, [
+            $props.messageSelectionEnabled ? (openBlock(), createElementBlock("div", _hoisted_3$d, [
               (openBlock(true), createElementBlock(Fragment, null, renderList($props.messageSelectionActions, (action) => {
                 return openBlock(), createElementBlock("div", {
                   id: action.name,
@@ -7408,8 +7408,8 @@ function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
                   }, [
                     createTextVNode(toDisplayString(action.title) + " ", 1),
                     createBaseVNode("span", _hoisted_6$5, toDisplayString($props.selectedMessagesTotal), 1)
-                  ], 8, _hoisted_5$9)
-                ], 8, _hoisted_4$d);
+                  ], 8, _hoisted_5$8)
+                ], 8, _hoisted_4$c);
               }), 128)),
               createBaseVNode("div", {
                 class: "vac-selection-cancel vac-item-clickable",
@@ -10410,8 +10410,8 @@ const _sfc_main$i = {
 };
 const _hoisted_1$i = { class: "vac-room-file-container" };
 const _hoisted_2$g = ["src"];
-const _hoisted_3$d = { class: "vac-text-ellipsis" };
-const _hoisted_4$c = {
+const _hoisted_3$c = { class: "vac-text-ellipsis" };
+const _hoisted_4$b = {
   key: 0,
   class: "vac-text-ellipsis vac-text-extension"
 };
@@ -10466,8 +10466,8 @@ function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
           createVNode(_component_svg_icon, { name: "file" })
         ])
       ]),
-      createBaseVNode("div", _hoisted_3$d, toDisplayString($props.file.name), 1),
-      $props.file.extension ? (openBlock(), createElementBlock("div", _hoisted_4$c, toDisplayString($props.file.extension), 1)) : createCommentVNode("", true)
+      createBaseVNode("div", _hoisted_3$c, toDisplayString($props.file.name), 1),
+      $props.file.extension ? (openBlock(), createElementBlock("div", _hoisted_4$b, toDisplayString($props.file.extension), 1)) : createCommentVNode("", true)
     ], 2))
   ]);
 }
@@ -10489,7 +10489,7 @@ const _hoisted_1$h = {
   class: "vac-room-files-container"
 };
 const _hoisted_2$f = { class: "vac-files-box" };
-const _hoisted_3$c = { class: "vac-icon-close" };
+const _hoisted_3$b = { class: "vac-icon-close" };
 function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_room_file = resolveComponent("room-file");
   const _component_svg_icon = resolveComponent("svg-icon");
@@ -10516,7 +10516,7 @@ function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
             ]);
           }), 128))
         ]),
-        createBaseVNode("div", _hoisted_3$c, [
+        createBaseVNode("div", _hoisted_3$b, [
           createBaseVNode("div", {
             class: "vac-svg-button",
             onClick: _cache[1] || (_cache[1] = ($event) => _ctx.$emit("reset-message"))
@@ -10755,9 +10755,9 @@ const _hoisted_1$e = {
   class: "vac-reply-container"
 };
 const _hoisted_2$c = { class: "vac-reply-box" };
-const _hoisted_3$b = { class: "vac-reply-info" };
-const _hoisted_4$b = { class: "vac-reply-username" };
-const _hoisted_5$8 = { class: "vac-reply-content" };
+const _hoisted_3$a = { class: "vac-reply-info" };
+const _hoisted_4$a = { class: "vac-reply-username" };
+const _hoisted_5$7 = { class: "vac-reply-content" };
 const _hoisted_6$4 = ["src"];
 const _hoisted_7$4 = {
   key: 1,
@@ -10783,9 +10783,9 @@ function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
     default: withCtx(() => [
       $props.messageReply ? (openBlock(), createElementBlock("div", _hoisted_1$e, [
         createBaseVNode("div", _hoisted_2$c, [
-          createBaseVNode("div", _hoisted_3$b, [
-            createBaseVNode("div", _hoisted_4$b, toDisplayString($props.messageReply.username), 1),
-            createBaseVNode("div", _hoisted_5$8, [
+          createBaseVNode("div", _hoisted_3$a, [
+            createBaseVNode("div", _hoisted_4$a, toDisplayString($props.messageReply.username), 1),
+            createBaseVNode("div", _hoisted_5$7, [
               createVNode(_component_format_message, {
                 "message-id": $props.messageReply._id,
                 content: $props.messageReply.content,
@@ -10883,8 +10883,8 @@ const _hoisted_1$d = {
   class: "vac-tags-container"
 };
 const _hoisted_2$b = ["onMouseover", "onClick"];
-const _hoisted_3$a = { class: "vac-tags-info" };
-const _hoisted_4$a = { class: "vac-tags-username" };
+const _hoisted_3$9 = { class: "vac-tags-info" };
+const _hoisted_4$9 = { class: "vac-tags-username" };
 function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, { name: "vac-slide-up" }, {
     default: withCtx(() => [
@@ -10896,13 +10896,13 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
             onMouseover: ($event) => $data.activeItem = index,
             onClick: ($event) => _ctx.$emit("select-user-tag", user)
           }, [
-            createBaseVNode("div", _hoisted_3$a, [
+            createBaseVNode("div", _hoisted_3$9, [
               user.avatar ? (openBlock(), createElementBlock("div", {
                 key: 0,
                 class: "vac-avatar vac-tags-avatar",
                 style: normalizeStyle({ "background-image": `url('${user.avatar}')` })
               }, null, 4)) : createCommentVNode("", true),
-              createBaseVNode("div", _hoisted_4$a, toDisplayString(user.username), 1)
+              createBaseVNode("div", _hoisted_4$9, toDisplayString(user.username), 1)
             ])
           ], 42, _hoisted_2$b);
         }), 128))
@@ -11011,9 +11011,9 @@ const _hoisted_1$b = {
   class: "vac-template-container vac-app-box-shadow"
 };
 const _hoisted_2$9 = ["onMouseover", "onClick"];
-const _hoisted_3$9 = { class: "vac-template-info" };
-const _hoisted_4$9 = { class: "vac-template-tag" };
-const _hoisted_5$7 = { class: "vac-template-text" };
+const _hoisted_3$8 = { class: "vac-template-info" };
+const _hoisted_4$8 = { class: "vac-template-tag" };
+const _hoisted_5$6 = { class: "vac-template-text" };
 function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, { name: "vac-slide-up" }, {
     default: withCtx(() => [
@@ -11025,9 +11025,9 @@ function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
             onMouseover: ($event) => $data.activeItem = index,
             onClick: ($event) => _ctx.$emit("select-template-text", template)
           }, [
-            createBaseVNode("div", _hoisted_3$9, [
-              createBaseVNode("div", _hoisted_4$9, " /" + toDisplayString(template.tag), 1),
-              createBaseVNode("div", _hoisted_5$7, toDisplayString(template.text), 1)
+            createBaseVNode("div", _hoisted_3$8, [
+              createBaseVNode("div", _hoisted_4$8, " /" + toDisplayString(template.tag), 1),
+              createBaseVNode("div", _hoisted_5$6, toDisplayString(template.text), 1)
             ])
           ], 42, _hoisted_2$9);
         }), 128))
@@ -27004,9 +27004,9 @@ const _hoisted_1$a = {
   class: "vac-icon-textarea-left"
 };
 const _hoisted_2$8 = /* @__PURE__ */ createBaseVNode("div", { class: "vac-dot-audio-record" }, null, -1);
-const _hoisted_3$8 = { class: "vac-dot-audio-record-time" };
-const _hoisted_4$8 = ["placeholder"];
-const _hoisted_5$6 = { class: "vac-icon-textarea" };
+const _hoisted_3$7 = { class: "vac-dot-audio-record-time" };
+const _hoisted_4$7 = ["placeholder"];
+const _hoisted_5$5 = { class: "vac-icon-textarea" };
 const _hoisted_6$3 = { key: 1 };
 const _hoisted_7$3 = ["accept"];
 function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
@@ -27089,7 +27089,7 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ]),
           _hoisted_2$8,
-          createBaseVNode("div", _hoisted_3$8, toDisplayString($options.recordedTime), 1),
+          createBaseVNode("div", _hoisted_3$7, toDisplayString($options.recordedTime), 1),
           createBaseVNode("div", {
             class: "vac-svg-button vac-icon-audio-confirm",
             onClick: _cache[7] || (_cache[7] = ($event) => $options.toggleRecorder(false))
@@ -27133,8 +27133,8 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
           _cache[16] || (_cache[16] = withKeys(($event) => $options.updateActiveUpOrDown($event, 1), ["down"]))
         ],
         onPaste: _cache[12] || (_cache[12] = (...args) => $options.onPasteImage && $options.onPasteImage(...args))
-      }, null, 42, _hoisted_4$8),
-      createBaseVNode("div", _hoisted_5$6, [
+      }, null, 42, _hoisted_4$7),
+      createBaseVNode("div", _hoisted_5$5, [
         $data.editedMessage._id ? (openBlock(), createElementBlock("div", {
           key: 0,
           class: "vac-svg-button",
@@ -27244,15 +27244,15 @@ const _sfc_main$9 = {
 };
 const _hoisted_1$9 = { class: "vac-reply-message" };
 const _hoisted_2$7 = { class: "vac-reply-username" };
-const _hoisted_3$7 = {
+const _hoisted_3$6 = {
   key: 0,
   class: "vac-image-reply-container"
 };
-const _hoisted_4$7 = {
+const _hoisted_4$6 = {
   key: 1,
   class: "vac-video-reply-container"
 };
-const _hoisted_5$5 = { controls: "" };
+const _hoisted_5$4 = { controls: "" };
 const _hoisted_6$2 = ["src"];
 const _hoisted_7$2 = {
   key: 3,
@@ -27270,15 +27270,15 @@ function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_format_message = resolveComponent("format-message");
   return openBlock(), createElementBlock("div", _hoisted_1$9, [
     createBaseVNode("div", _hoisted_2$7, toDisplayString($options.replyUsername), 1),
-    $options.isImage ? (openBlock(), createElementBlock("div", _hoisted_3$7, [
+    $options.isImage ? (openBlock(), createElementBlock("div", _hoisted_3$6, [
       createBaseVNode("div", {
         class: "vac-message-image vac-message-image-reply",
         style: normalizeStyle({
           "background-image": `url('${$options.firstFile.url}')`
         })
       }, null, 4)
-    ])) : $options.isVideo ? (openBlock(), createElementBlock("div", _hoisted_4$7, [
-      createBaseVNode("video", _hoisted_5$5, [
+    ])) : $options.isVideo ? (openBlock(), createElementBlock("div", _hoisted_4$6, [
+      createBaseVNode("video", _hoisted_5$4, [
         createBaseVNode("source", {
           src: $options.firstFile.url
         }, null, 8, _hoisted_6$2)
@@ -27348,9 +27348,9 @@ const _hoisted_1$8 = {
   class: "vac-progress-wrapper"
 };
 const _hoisted_2$6 = ["height", "width"];
-const _hoisted_3$6 = ["stroke-dasharray", "stroke-width", "r", "cx", "cy"];
-const _hoisted_4$6 = { class: "vac-progress-text" };
-const _hoisted_5$4 = /* @__PURE__ */ createBaseVNode("span", { class: "vac-progress-pourcent" }, "%", -1);
+const _hoisted_3$5 = ["stroke-dasharray", "stroke-width", "r", "cx", "cy"];
+const _hoisted_4$5 = { class: "vac-progress-text" };
+const _hoisted_5$3 = /* @__PURE__ */ createBaseVNode("span", { class: "vac-progress-pourcent" }, "%", -1);
 function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, {
     name: "vac-fade-spinner",
@@ -27374,7 +27374,7 @@ function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
             r: $data.normalizedRadius,
             cx: $data.radius,
             cy: $data.radius
-          }, null, 12, _hoisted_3$6)
+          }, null, 12, _hoisted_3$5)
         ], 8, _hoisted_2$6)),
         createBaseVNode("div", {
           class: "vac-progress-content",
@@ -27383,9 +27383,9 @@ function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
             width: $data.radius * 2 - 19 + "px"
           })
         }, [
-          createBaseVNode("div", _hoisted_4$6, [
+          createBaseVNode("div", _hoisted_4$5, [
             createTextVNode(toDisplayString($props.progress), 1),
-            _hoisted_5$4
+            _hoisted_5$3
           ])
         ], 4)
       ], 512)
@@ -27462,8 +27462,8 @@ const _hoisted_2$5 = {
   key: 0,
   class: "vac-image-buttons"
 };
-const _hoisted_3$5 = { controls: "" };
-const _hoisted_4$5 = ["src"];
+const _hoisted_3$4 = { controls: "" };
+const _hoisted_4$4 = ["src"];
 function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_progress_bar = resolveComponent("progress-bar");
   const _component_loader = resolveComponent("loader");
@@ -27539,10 +27539,10 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
         key: 0,
         progress: $props.file.progress
       }, null, 8, ["progress"])) : createCommentVNode("", true),
-      createBaseVNode("video", _hoisted_3$5, [
+      createBaseVNode("video", _hoisted_3$4, [
         createBaseVNode("source", {
           src: $props.file.url
-        }, null, 8, _hoisted_4$5)
+        }, null, 8, _hoisted_4$4)
       ])
     ])) : createCommentVNode("", true)
   ]);
@@ -27578,13 +27578,7 @@ const _sfc_main$6 = {
   }
 };
 const _hoisted_1$6 = { class: "vac-message-files-container" };
-const _hoisted_2$4 = ["onClick"];
-const _hoisted_3$4 = { class: "vac-svg-button" };
-const _hoisted_4$4 = { class: "vac-text-ellipsis" };
-const _hoisted_5$3 = {
-  key: 0,
-  class: "vac-text-ellipsis vac-text-extension"
-};
+const _hoisted_2$4 = { class: "vac-image-buttons" };
 function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_message_file = resolveComponent("message-file");
   const _component_progress_bar = resolveComponent("progress-bar");
@@ -27625,17 +27619,28 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
           style: { top: "44px" }
         }, null, 8, ["progress"])) : createCommentVNode("", true),
         createBaseVNode("div", {
-          class: normalizeClass(["vac-file-container", { "vac-file-container-progress": file.progress >= 0 }]),
-          onClick: ($event) => $options.openFile($event, file, "download")
+          class: "vac-message-image",
+          style: normalizeStyle({
+            "background-image": `url('${file.preview}')`,
+            "max-height": `${70}px`
+          })
         }, [
-          createBaseVNode("div", _hoisted_3$4, [
-            renderSlot(_ctx.$slots, "document-icon", {}, () => [
-              createVNode(_component_svg_icon, { name: "document" })
-            ])
-          ]),
-          createBaseVNode("div", _hoisted_4$4, toDisplayString(file.name), 1),
-          file.extension ? (openBlock(), createElementBlock("div", _hoisted_5$3, toDisplayString(file.extension), 1)) : createCommentVNode("", true)
-        ], 10, _hoisted_2$4)
+          createVNode(Transition, { name: "vac-fade-image" }, {
+            default: withCtx(() => [
+              createBaseVNode("div", _hoisted_2$4, [
+                createBaseVNode("div", {
+                  class: "vac-svg-button vac-button-download",
+                  onClick: _cache[1] || (_cache[1] = ($event) => $options.openFile($event, "download"))
+                }, [
+                  renderSlot(_ctx.$slots, "document-icon_" + $props.message._id, {}, () => [
+                    createVNode(_component_svg_icon, { name: "document" })
+                  ])
+                ])
+              ])
+            ]),
+            _: 3
+          })
+        ], 4)
       ]);
     }), 128)),
     createVNode(_component_format_message, {
@@ -27644,7 +27649,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
       users: $props.roomUsers,
       "text-formatting": $props.textFormatting,
       "link-options": $props.linkOptions,
-      onOpenUserTag: _cache[1] || (_cache[1] = ($event) => _ctx.$emit("open-user-tag", $event))
+      onOpenUserTag: _cache[2] || (_cache[2] = ($event) => _ctx.$emit("open-user-tag", $event))
     }, null, 8, ["message-id", "content", "users", "text-formatting", "link-options"])
   ]);
 }
