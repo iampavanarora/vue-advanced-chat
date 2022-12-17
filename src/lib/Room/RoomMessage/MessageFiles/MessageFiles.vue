@@ -15,43 +15,15 @@
 			</message-file>
 		</div>
 
-		<div
-			v-for="(file, i) in otherFiles"
-			:key="i + 'a'"
-			class="vac-file-wrapper"
-		>
-			<progress-bar
-				v-if="file.progress >= 0"
-				:progress="file.progress"
-				:style="{ top: '44px' }"
-			/>
-			<!-- <div
-				class="vac-file-container"
-				:class="{ 'vac-file-container-progress': file.progress >= 0 }"
-				@click="openFile($event, file, 'download')"
+		<div v-for="(file, i) in otherFiles" :key="i + 'ivs'" @click="openFile($event, file, 'download')">
+			<message-other-files
+				:file="file"
+				:current-user-id="currentUserId"
+				:message="message"
+				:index="i"
+				:message-selection-enabled="messageSelectionEnabled"
 			>
-				<div class="vac-svg-button">
-					<slot name="document-icon">
-						<svg-icon name="document" />
-					</slot>
-				</div>
-				<div class="vac-text-ellipsis">
-					{{ file.name }}
-				</div>
-				<div v-if="file.extension" class="vac-text-ellipsis vac-text-extension">
-					{{ file.extension }}
-				</div>
-			</div> -->
-			<div
-				class="vac-message-image"
-				:class="{ 'vac-file-container-progress': file.progress >= 0 }"
-				@click="openFile($event, file, 'download')"
-				:style="{
-					'background-image': `url('${file.preview}')`,
-					'max-height': `${255}px`
-				}"
-			>
-			</div>
+			</message-other-files>
 		</div>
 
 		<format-message
@@ -89,12 +61,29 @@ export default {
 
 	emits: ['open-file', 'open-user-tag'],
 
+	data() {
+		return {
+			imageResponsive: '',
+		}
+	},
+
 	computed: {
 		imageVideoFiles() {
 			return this.message.files.filter(file => isImageVideoFile(file))
 		},
 		otherFiles() {
 			return this.message.files.filter(file => !isImageVideoFile(file))
+		}
+	},
+
+	mounted() {
+		const ref = this.$refs['imageRef' + this.index]
+
+		if (ref) {
+			this.imageResponsive = {
+				maxHeight: ref.clientWidth - 18,
+				loaderTop: ref.clientHeight / 2 - 9
+			}
 		}
 	},
 

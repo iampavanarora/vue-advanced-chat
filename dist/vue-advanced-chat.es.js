@@ -27560,12 +27560,26 @@ const _sfc_main$6 = {
     messageSelectionEnabled: { type: Boolean, required: true }
   },
   emits: ["open-file", "open-user-tag"],
+  data() {
+    return {
+      imageResponsive: ""
+    };
+  },
   computed: {
     imageVideoFiles() {
       return this.message.files.filter((file) => isImageVideoFile(file));
     },
     otherFiles() {
       return this.message.files.filter((file) => !isImageVideoFile(file));
+    }
+  },
+  mounted() {
+    const ref = this.$refs["imageRef" + this.index];
+    if (ref) {
+      this.imageResponsive = {
+        maxHeight: ref.clientWidth - 18,
+        loaderTop: ref.clientHeight / 2 - 9
+      };
     }
   },
   methods: {
@@ -27581,7 +27595,7 @@ const _hoisted_1$6 = { class: "vac-message-files-container" };
 const _hoisted_2$4 = ["onClick"];
 function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_message_file = resolveComponent("message-file");
-  const _component_progress_bar = resolveComponent("progress-bar");
+  const _component_message_other_files = resolveComponent("message-other-files");
   const _component_format_message = resolveComponent("format-message");
   return openBlock(), createElementBlock("div", _hoisted_1$6, [
     (openBlock(true), createElementBlock(Fragment, null, renderList($options.imageVideoFiles, (file, i) => {
@@ -27609,23 +27623,17 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     }), 128)),
     (openBlock(true), createElementBlock(Fragment, null, renderList($options.otherFiles, (file, i) => {
       return openBlock(), createElementBlock("div", {
-        key: i + "a",
-        class: "vac-file-wrapper"
+        key: i + "ivs",
+        onClick: ($event) => $options.openFile($event, file, "download")
       }, [
-        file.progress >= 0 ? (openBlock(), createBlock(_component_progress_bar, {
-          key: 0,
-          progress: file.progress,
-          style: { top: "44px" }
-        }, null, 8, ["progress"])) : createCommentVNode("", true),
-        createBaseVNode("div", {
-          class: normalizeClass(["vac-message-image", { "vac-file-container-progress": file.progress >= 0 }]),
-          onClick: ($event) => $options.openFile($event, file, "download"),
-          style: normalizeStyle({
-            "background-image": `url('${file.preview}')`,
-            "max-height": `${255}px`
-          })
-        }, null, 14, _hoisted_2$4)
-      ]);
+        createVNode(_component_message_other_files, {
+          file,
+          "current-user-id": $props.currentUserId,
+          message: $props.message,
+          index: i,
+          "message-selection-enabled": $props.messageSelectionEnabled
+        }, null, 8, ["file", "current-user-id", "message", "index", "message-selection-enabled"])
+      ], 8, _hoisted_2$4);
     }), 128)),
     createVNode(_component_format_message, {
       "message-id": $props.message._id,
