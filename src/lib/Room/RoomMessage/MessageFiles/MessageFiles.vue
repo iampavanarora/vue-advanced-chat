@@ -43,12 +43,14 @@ import FormatMessage from '../../../../components/FormatMessage/FormatMessage'
 import ProgressBar from '../../../../components/ProgressBar/ProgressBar'
 
 import MessageFile from './MessageFile/MessageFile'
+import MessageOtherFiles from './MessageOtherFiles/MessageOtherFiles'
+
 
 import { isImageVideoFile } from '../../../../utils/media-file'
 
 export default {
 	name: 'MessageFiles',
-	components: { SvgIcon, FormatMessage, ProgressBar, MessageFile },
+	components: { SvgIcon, FormatMessage, ProgressBar, MessageFile, MessageOtherFiles },
 
 	props: {
 		currentUserId: { type: [String, Number], required: true },

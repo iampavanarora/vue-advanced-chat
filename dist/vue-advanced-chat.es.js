@@ -5351,7 +5351,7 @@ var _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$q = {
+const _sfc_main$r = {
   name: "AppLoader",
   props: {
     show: { type: Boolean, default: false },
@@ -5360,13 +5360,13 @@ const _sfc_main$q = {
     messageId: { type: String, default: "" }
   }
 };
-const _hoisted_1$q = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
+const _hoisted_1$r = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
 const _hoisted_2$n = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
 const _hoisted_3$i = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
 const _hoisted_4$g = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
 const _hoisted_5$a = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
 const _hoisted_6$7 = /* @__PURE__ */ createBaseVNode("div", { id: "vac-circle" }, null, -1);
-function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$r(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, {
     name: "vac-fade-spinner",
     appear: ""
@@ -5380,7 +5380,7 @@ function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
         }])
       }, [
         $props.type === "rooms" ? renderSlot(_ctx.$slots, "spinner-icon-rooms", { key: 0 }, () => [
-          _hoisted_1$q
+          _hoisted_1$r
         ]) : createCommentVNode("", true),
         $props.type === "infinite-rooms" ? renderSlot(_ctx.$slots, "spinner-icon-infinite-rooms", { key: 1 }, () => [
           _hoisted_2$n
@@ -5402,8 +5402,8 @@ function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
     _: 3
   });
 }
-var Loader = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$q]]);
-const _sfc_main$p = {
+var Loader = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$r]]);
+const _sfc_main$q = {
   name: "SvgIcon",
   props: {
     name: { type: String, default: null },
@@ -5495,10 +5495,10 @@ const _sfc_main$p = {
     }
   }
 };
-const _hoisted_1$p = ["viewBox"];
+const _hoisted_1$q = ["viewBox"];
 const _hoisted_2$m = ["id", "d"];
 const _hoisted_3$h = ["id", "d"];
-function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$q(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     "xmlns:xlink": "http://www.w3.org/1999/xlink",
@@ -5516,10 +5516,10 @@ function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
       id: $options.svgId,
       d: $data.svgItem[$props.name].path2
     }, null, 8, _hoisted_3$h)) : createCommentVNode("", true)
-  ], 8, _hoisted_1$p);
+  ], 8, _hoisted_1$q);
 }
-var SvgIcon = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p]]);
-const _sfc_main$o = {
+var SvgIcon = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$q]]);
+const _sfc_main$p = {
   name: "RoomsSearch",
   components: { SvgIcon },
   props: {
@@ -5536,12 +5536,12 @@ const _sfc_main$o = {
     }
   }
 };
-const _hoisted_1$o = {
+const _hoisted_1$p = {
   key: 0,
   class: "vac-icon-search"
 };
 const _hoisted_2$l = ["placeholder"];
-function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_svg_icon = resolveComponent("svg-icon");
   return openBlock(), createElementBlock("div", {
     class: normalizeClass({
@@ -5550,7 +5550,7 @@ function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, [
     $props.showSearch ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-      !$props.loadingRooms && $props.rooms.length ? (openBlock(), createElementBlock("div", _hoisted_1$o, [
+      !$props.loadingRooms && $props.rooms.length ? (openBlock(), createElementBlock("div", _hoisted_1$p, [
         renderSlot(_ctx.$slots, "search-icon", {}, () => [
           createVNode(_component_svg_icon, { name: "search" })
         ])
@@ -5575,7 +5575,7 @@ function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     ])) : createCommentVNode("", true)
   ], 2);
 }
-var RoomsSearch = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o]]);
+var RoomsSearch = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$p]]);
 var linkify = {};
 var _class$4 = {};
 _class$4.__esModule = true;
@@ -6460,7 +6460,7 @@ function linkifyResult(array) {
 const IMAGE_TYPES = ["png", "jpg", "jpeg", "webp", "svg", "gif"];
 const VIDEO_TYPES = ["mp4", "video/ogg", "webm", "quicktime"];
 const AUDIO_TYPES = ["mp3", "audio/ogg", "wav", "mpeg"];
-const _sfc_main$n = {
+const _sfc_main$o = {
   name: "FormatMessage",
   components: { SvgIcon },
   props: {
@@ -6589,11 +6589,11 @@ const _sfc_main$n = {
     }
   }
 };
-const _hoisted_1$n = { class: "vac-image-link-container" };
+const _hoisted_1$o = { class: "vac-image-link-container" };
 const _hoisted_2$k = { class: "vac-image-link-message" };
 const _hoisted_3$g = ["innerHTML"];
 const _hoisted_4$f = ["innerHTML"];
-function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_svg_icon = resolveComponent("svg-icon");
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(["vac-format-message-wrapper", { "vac-text-ellipsis": $props.singleLine }])
@@ -6638,7 +6638,7 @@ function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
                 ),
                 createTextVNode(" " + toDisplayString($props.textMessages.MESSAGE_DELETED), 1)
               ], 64)) : message.url && message.image ? (openBlock(), createElementBlock(Fragment, { key: 1 }, [
-                createBaseVNode("div", _hoisted_1$n, [
+                createBaseVNode("div", _hoisted_1$o, [
                   createBaseVNode("div", {
                     class: "vac-image-link",
                     style: normalizeStyle({
@@ -6665,7 +6665,7 @@ function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
     }, null, 8, _hoisted_4$f))
   ], 2);
 }
-var FormatMessage = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n]]);
+var FormatMessage = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o]]);
 const HANDLERS_PROPERTY = "__v-click-outside";
 const HAS_WINDOWS = typeof window !== "undefined";
 const HAS_NAVIGATOR = typeof navigator !== "undefined";
@@ -6801,7 +6801,7 @@ function isImageVideoFile(file) {
 function isAudioFile(file) {
   return checkMediaType(AUDIO_TYPES, file);
 }
-const _sfc_main$m = {
+const _sfc_main$n = {
   name: "RoomsContent",
   components: {
     SvgIcon,
@@ -6883,7 +6883,7 @@ const _sfc_main$m = {
     }
   }
 };
-const _hoisted_1$m = { class: "vac-room-container" };
+const _hoisted_1$n = { class: "vac-room-container" };
 const _hoisted_2$j = { class: "vac-name-container vac-text-ellipsis" };
 const _hoisted_3$f = { class: "vac-title-container" };
 const _hoisted_4$e = { class: "vac-room-name vac-text-ellipsis" };
@@ -6911,11 +6911,11 @@ const _hoisted_11$3 = {
 };
 const _hoisted_12$3 = { class: "vac-menu-list" };
 const _hoisted_13$1 = ["onClick"];
-function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_svg_icon = resolveComponent("svg-icon");
   const _component_format_message = resolveComponent("format-message");
   const _directive_click_outside = resolveDirective("click-outside");
-  return openBlock(), createElementBlock("div", _hoisted_1$m, [
+  return openBlock(), createElementBlock("div", _hoisted_1$n, [
     renderSlot(_ctx.$slots, "room-list-item_" + $props.room.roomId, {}, () => [
       renderSlot(_ctx.$slots, "room-list-avatar_" + $props.room.roomId, {}, () => [
         $props.room.avatar ? (openBlock(), createElementBlock("div", {
@@ -7025,7 +7025,7 @@ function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var RoomContent = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$m]]);
+var RoomContent = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n]]);
 var filteredItems = (items, prop, val, startsWith = false) => {
   if (!val || val === "")
     return items;
@@ -7038,7 +7038,7 @@ var filteredItems = (items, prop, val, startsWith = false) => {
 function formatString(string) {
   return string.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-const _sfc_main$l = {
+const _sfc_main$m = {
   name: "RoomsList",
   components: {
     Loader,
@@ -7168,7 +7168,7 @@ const _sfc_main$l = {
     }
   }
 };
-const _hoisted_1$l = {
+const _hoisted_1$m = {
   key: 0,
   class: "vac-rooms-empty"
 };
@@ -7182,7 +7182,7 @@ const _hoisted_4$d = {
   key: 0,
   id: "infinite-loader-rooms"
 };
-function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_rooms_search = resolveComponent("rooms-search");
   const _component_loader = resolveComponent("loader");
   const _component_room_content = resolveComponent("room-content");
@@ -7226,7 +7226,7 @@ function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
         };
       })
     ]), 1032, ["show"]),
-    !$props.loadingRooms && !$props.rooms.length ? (openBlock(), createElementBlock("div", _hoisted_1$l, [
+    !$props.loadingRooms && !$props.rooms.length ? (openBlock(), createElementBlock("div", _hoisted_1$m, [
       renderSlot(_ctx.$slots, "rooms-empty", {}, () => [
         createTextVNode(toDisplayString($props.textMessages.ROOMS_EMPTY), 1)
       ])
@@ -7285,8 +7285,8 @@ function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
     [vShow, $props.showRoomsList]
   ]);
 }
-var RoomsList = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$l]]);
-const _sfc_main$k = {
+var RoomsList = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$m]]);
+const _sfc_main$l = {
   name: "RoomHeader",
   components: {
     SvgIcon
@@ -7363,7 +7363,7 @@ const _sfc_main$k = {
     }
   }
 };
-const _hoisted_1$k = { class: "vac-room-header vac-app-border-b" };
+const _hoisted_1$l = { class: "vac-room-header vac-app-border-b" };
 const _hoisted_2$h = { class: "vac-room-wrapper" };
 const _hoisted_3$d = {
   key: 0,
@@ -7388,10 +7388,10 @@ const _hoisted_11$2 = {
 };
 const _hoisted_12$2 = { class: "vac-menu-list" };
 const _hoisted_13 = ["onClick"];
-function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_svg_icon = resolveComponent("svg-icon");
   const _directive_click_outside = resolveDirective("click-outside");
-  return openBlock(), createElementBlock("div", _hoisted_1$k, [
+  return openBlock(), createElementBlock("div", _hoisted_1$l, [
     renderSlot(_ctx.$slots, "room-header", {}, () => [
       createBaseVNode("div", _hoisted_2$h, [
         createVNode(Transition, { name: "vac-slide-up" }, {
@@ -7490,7 +7490,7 @@ function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var RoomHeader = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k]]);
+var RoomHeader = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$l]]);
 function assertNonEmptyString(str) {
   if (typeof str !== "string" || !str) {
     throw new Error("expected a non-empty string, got: " + str);
@@ -10244,7 +10244,7 @@ function findParentBySelector(node, selector) {
   }
   return null;
 }
-const _sfc_main$j = {
+const _sfc_main$k = {
   name: "EmojiPickerContainer",
   components: {
     SvgIcon
@@ -10340,11 +10340,11 @@ const _sfc_main$j = {
     }
   }
 };
-const _hoisted_1$j = { class: "vac-emoji-wrapper" };
-function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
+const _hoisted_1$k = { class: "vac-emoji-wrapper" };
+function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_svg_icon = resolveComponent("svg-icon");
   const _component_emoji_picker = resolveComponent("emoji-picker");
-  return openBlock(), createElementBlock("div", _hoisted_1$j, [
+  return openBlock(), createElementBlock("div", _hoisted_1$k, [
     createBaseVNode("div", {
       class: normalizeClass(["vac-svg-button", { "vac-emoji-reaction": $props.emojiReaction }]),
       onClick: _cache[0] || (_cache[0] = (...args) => $options.openEmoji && $options.openEmoji(...args))
@@ -10387,8 +10387,8 @@ function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
     })) : createCommentVNode("", true)
   ]);
 }
-var EmojiPickerContainer = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$j]]);
-const _sfc_main$i = {
+var EmojiPickerContainer = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k]]);
+const _sfc_main$j = {
   name: "RoomFiles",
   components: {
     Loader,
@@ -10408,17 +10408,17 @@ const _sfc_main$i = {
     }
   }
 };
-const _hoisted_1$i = { class: "vac-room-file-container" };
+const _hoisted_1$j = { class: "vac-room-file-container" };
 const _hoisted_2$g = ["src"];
 const _hoisted_3$c = { class: "vac-text-ellipsis" };
 const _hoisted_4$b = {
   key: 0,
   class: "vac-text-ellipsis vac-text-extension"
 };
-function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_loader = resolveComponent("loader");
   const _component_svg_icon = resolveComponent("svg-icon");
-  return openBlock(), createElementBlock("div", _hoisted_1$i, [
+  return openBlock(), createElementBlock("div", _hoisted_1$j, [
     createVNode(_component_loader, {
       show: $props.file.loading,
       type: "room-file"
@@ -10471,8 +10471,8 @@ function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2))
   ]);
 }
-var RoomFile = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$i]]);
-const _sfc_main$h = {
+var RoomFile = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$j]]);
+const _sfc_main$i = {
   name: "RoomFiles",
   components: {
     SvgIcon,
@@ -10484,18 +10484,18 @@ const _sfc_main$h = {
   emits: ["remove-file", "reset-message"],
   computed: {}
 };
-const _hoisted_1$h = {
+const _hoisted_1$i = {
   key: 0,
   class: "vac-room-files-container"
 };
 const _hoisted_2$f = { class: "vac-files-box" };
 const _hoisted_3$b = { class: "vac-icon-close" };
-function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_room_file = resolveComponent("room-file");
   const _component_svg_icon = resolveComponent("svg-icon");
   return openBlock(), createBlock(Transition, { name: "vac-slide-up" }, {
     default: withCtx(() => [
-      $props.files.length ? (openBlock(), createElementBlock("div", _hoisted_1$h, [
+      $props.files.length ? (openBlock(), createElementBlock("div", _hoisted_1$i, [
         createBaseVNode("div", _hoisted_2$f, [
           (openBlock(true), createElementBlock(Fragment, null, renderList($props.files, (file, i) => {
             return openBlock(), createElementBlock("div", { key: i }, [
@@ -10531,8 +10531,8 @@ function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
     _: 3
   });
 }
-var RoomFiles = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$h]]);
-const _sfc_main$g = {
+var RoomFiles = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$i]]);
+const _sfc_main$h = {
   props: {
     percentage: { type: Number, default: 0 },
     messageSelectionEnabled: { type: Boolean, required: true }
@@ -10578,9 +10578,9 @@ const _sfc_main$g = {
     }
   }
 };
-const _hoisted_1$g = { class: "vac-player-progress" };
+const _hoisted_1$h = { class: "vac-player-progress" };
 const _hoisted_2$e = { class: "vac-line-container" };
-function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     ref: "progress",
     class: "vac-player-bar",
@@ -10588,7 +10588,7 @@ function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
     onMouseover: _cache[1] || (_cache[1] = ($event) => _ctx.$emit("hover-audio-progress", true)),
     onMouseout: _cache[2] || (_cache[2] = ($event) => _ctx.$emit("hover-audio-progress", false))
   }, [
-    createBaseVNode("div", _hoisted_1$g, [
+    createBaseVNode("div", _hoisted_1$h, [
       createBaseVNode("div", _hoisted_2$e, [
         createBaseVNode("div", {
           class: "vac-line-progress",
@@ -10602,8 +10602,8 @@ function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ], 544);
 }
-var AudioControl = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g]]);
-const _sfc_main$f = {
+var AudioControl = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$h]]);
+const _sfc_main$g = {
   name: "AudioPlayer",
   components: {
     SvgIcon,
@@ -10685,13 +10685,13 @@ const _sfc_main$f = {
     }
   }
 };
-const _hoisted_1$f = { class: "vac-audio-player" };
+const _hoisted_1$g = { class: "vac-audio-player" };
 const _hoisted_2$d = ["id", "src"];
-function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_svg_icon = resolveComponent("svg-icon");
   const _component_audio_control = resolveComponent("audio-control");
   return openBlock(), createElementBlock("div", null, [
-    createBaseVNode("div", _hoisted_1$f, [
+    createBaseVNode("div", _hoisted_1$g, [
       createBaseVNode("div", {
         class: "vac-svg-button",
         onClick: _cache[0] || (_cache[0] = (...args) => $options.playback && $options.playback(...args))
@@ -10715,8 +10715,8 @@ function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var AudioPlayer = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f]]);
-const _sfc_main$e = {
+var AudioPlayer = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g]]);
+const _sfc_main$f = {
   name: "RoomMessageReply",
   components: {
     SvgIcon,
@@ -10750,7 +10750,7 @@ const _sfc_main$e = {
     }
   }
 };
-const _hoisted_1$e = {
+const _hoisted_1$f = {
   key: 0,
   class: "vac-reply-container"
 };
@@ -10775,13 +10775,13 @@ const _hoisted_11$1 = {
   class: "vac-text-ellipsis vac-text-extension"
 };
 const _hoisted_12$1 = { class: "vac-icon-reply" };
-function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_format_message = resolveComponent("format-message");
   const _component_audio_player = resolveComponent("audio-player");
   const _component_svg_icon = resolveComponent("svg-icon");
   return openBlock(), createBlock(Transition, { name: "vac-slide-up" }, {
     default: withCtx(() => [
-      $props.messageReply ? (openBlock(), createElementBlock("div", _hoisted_1$e, [
+      $props.messageReply ? (openBlock(), createElementBlock("div", _hoisted_1$f, [
         createBaseVNode("div", _hoisted_2$c, [
           createBaseVNode("div", _hoisted_3$a, [
             createBaseVNode("div", _hoisted_4$a, toDisplayString($props.messageReply.username), 1),
@@ -10843,8 +10843,8 @@ function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
     _: 3
   });
 }
-var RoomMessageReply = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$e]]);
-const _sfc_main$d = {
+var RoomMessageReply = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f]]);
+const _sfc_main$e = {
   name: "RoomUsersTag",
   props: {
     filteredUsersTag: { type: Array, required: true },
@@ -10878,17 +10878,17 @@ const _sfc_main$d = {
     }
   }
 };
-const _hoisted_1$d = {
+const _hoisted_1$e = {
   key: 0,
   class: "vac-tags-container"
 };
 const _hoisted_2$b = ["onMouseover", "onClick"];
 const _hoisted_3$9 = { class: "vac-tags-info" };
 const _hoisted_4$9 = { class: "vac-tags-username" };
-function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, { name: "vac-slide-up" }, {
     default: withCtx(() => [
-      $props.filteredUsersTag.length ? (openBlock(), createElementBlock("div", _hoisted_1$d, [
+      $props.filteredUsersTag.length ? (openBlock(), createElementBlock("div", _hoisted_1$e, [
         (openBlock(true), createElementBlock(Fragment, null, renderList($props.filteredUsersTag, (user, index) => {
           return openBlock(), createElementBlock("div", {
             key: user._id,
@@ -10911,8 +10911,8 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-var RoomUsersTag = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$d]]);
-const _sfc_main$c = {
+var RoomUsersTag = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$e]]);
+const _sfc_main$d = {
   name: "RoomEmojis",
   props: {
     filteredEmojis: { type: Array, required: true },
@@ -10946,15 +10946,15 @@ const _sfc_main$c = {
     }
   }
 };
-const _hoisted_1$c = {
+const _hoisted_1$d = {
   key: 0,
   class: "vac-emojis-container"
 };
 const _hoisted_2$a = ["onMouseover", "onClick"];
-function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, { name: "vac-slide-up" }, {
     default: withCtx(() => [
-      $props.filteredEmojis.length ? (openBlock(), createElementBlock("div", _hoisted_1$c, [
+      $props.filteredEmojis.length ? (openBlock(), createElementBlock("div", _hoisted_1$d, [
         (openBlock(true), createElementBlock(Fragment, null, renderList($props.filteredEmojis, (emoji, index) => {
           return openBlock(), createElementBlock("div", {
             key: emoji,
@@ -10968,8 +10968,8 @@ function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-var RoomEmojis = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$c]]);
-const _sfc_main$b = {
+var RoomEmojis = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$d]]);
+const _sfc_main$c = {
   name: "RoomTemplatesText",
   props: {
     filteredTemplatesText: { type: Array, required: true },
@@ -11006,7 +11006,7 @@ const _sfc_main$b = {
     }
   }
 };
-const _hoisted_1$b = {
+const _hoisted_1$c = {
   key: 0,
   class: "vac-template-container vac-app-box-shadow"
 };
@@ -11014,10 +11014,10 @@ const _hoisted_2$9 = ["onMouseover", "onClick"];
 const _hoisted_3$8 = { class: "vac-template-info" };
 const _hoisted_4$8 = { class: "vac-template-tag" };
 const _hoisted_5$6 = { class: "vac-template-text" };
-function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, { name: "vac-slide-up" }, {
     default: withCtx(() => [
-      $props.filteredTemplatesText.length ? (openBlock(), createElementBlock("div", _hoisted_1$b, [
+      $props.filteredTemplatesText.length ? (openBlock(), createElementBlock("div", _hoisted_1$c, [
         (openBlock(true), createElementBlock(Fragment, null, renderList($props.filteredTemplatesText, (template, index) => {
           return openBlock(), createElementBlock("div", {
             key: index,
@@ -11036,7 +11036,7 @@ function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-var RoomTemplatesText = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$b]]);
+var RoomTemplatesText = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$c]]);
 function new_byte$4(count) {
   return new Int8Array(count);
 }
@@ -26467,7 +26467,7 @@ function getUserAgent() {
     throw new Error("Failed to look for user agent information.");
   return userAgent;
 }
-const _sfc_main$a = {
+const _sfc_main$b = {
   name: "RoomFooter",
   components: {
     SvgIcon,
@@ -26999,7 +26999,7 @@ const _sfc_main$a = {
     }
   }
 };
-const _hoisted_1$a = {
+const _hoisted_1$b = {
   key: 0,
   class: "vac-icon-textarea-left"
 };
@@ -27009,7 +27009,7 @@ const _hoisted_4$7 = ["placeholder"];
 const _hoisted_5$5 = { class: "vac-icon-textarea" };
 const _hoisted_6$3 = { key: 1 };
 const _hoisted_7$3 = ["accept"];
-function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_room_emojis = resolveComponent("room-emojis");
   const _component_room_users_tag = resolveComponent("room-users-tag");
   const _component_room_templates_text = resolveComponent("room-templates-text");
@@ -27078,7 +27078,7 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     createBaseVNode("div", {
       class: normalizeClass(["vac-box-footer", { "vac-box-footer-border": !$data.files.length }])
     }, [
-      $props.showAudio && !$data.files.length ? (openBlock(), createElementBlock("div", _hoisted_1$a, [
+      $props.showAudio && !$data.files.length ? (openBlock(), createElementBlock("div", _hoisted_1$b, [
         $data.isRecording ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
           createBaseVNode("div", {
             class: "vac-svg-button vac-icon-audio-stop",
@@ -27207,8 +27207,8 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     [vShow, Object.keys($props.room).length && $props.showFooter]
   ]);
 }
-var RoomFooter = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a]]);
-const _sfc_main$9 = {
+var RoomFooter = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$b]]);
+const _sfc_main$a = {
   name: "MessageReply",
   components: { AudioPlayer, SvgIcon, FormatMessage },
   props: {
@@ -27242,7 +27242,7 @@ const _sfc_main$9 = {
     }
   }
 };
-const _hoisted_1$9 = { class: "vac-reply-message" };
+const _hoisted_1$a = { class: "vac-reply-message" };
 const _hoisted_2$7 = { class: "vac-reply-username" };
 const _hoisted_3$6 = {
   key: 0,
@@ -27264,11 +27264,11 @@ const _hoisted_9$1 = {
   class: "vac-text-ellipsis vac-text-extension"
 };
 const _hoisted_10$1 = { class: "vac-reply-content" };
-function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_audio_player = resolveComponent("audio-player");
   const _component_svg_icon = resolveComponent("svg-icon");
   const _component_format_message = resolveComponent("format-message");
-  return openBlock(), createElementBlock("div", _hoisted_1$9, [
+  return openBlock(), createElementBlock("div", _hoisted_1$a, [
     createBaseVNode("div", _hoisted_2$7, toDisplayString($options.replyUsername), 1),
     $options.isImage ? (openBlock(), createElementBlock("div", _hoisted_3$6, [
       createBaseVNode("div", {
@@ -27319,8 +27319,8 @@ function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var MessageReply = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9]]);
-const _sfc_main$8 = {
+var MessageReply = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a]]);
+const _sfc_main$9 = {
   name: "ProgressBar",
   props: {
     progress: { type: Number, default: 0 }
@@ -27343,7 +27343,7 @@ const _sfc_main$8 = {
     }
   }
 };
-const _hoisted_1$8 = {
+const _hoisted_1$9 = {
   ref: "progress",
   class: "vac-progress-wrapper"
 };
@@ -27351,13 +27351,13 @@ const _hoisted_2$6 = ["height", "width"];
 const _hoisted_3$5 = ["stroke-dasharray", "stroke-width", "r", "cx", "cy"];
 const _hoisted_4$5 = { class: "vac-progress-text" };
 const _hoisted_5$3 = /* @__PURE__ */ createBaseVNode("span", { class: "vac-progress-pourcent" }, "%", -1);
-function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createBlock(Transition, {
     name: "vac-fade-spinner",
     appear: ""
   }, {
     default: withCtx(() => [
-      createBaseVNode("div", _hoisted_1$8, [
+      createBaseVNode("div", _hoisted_1$9, [
         (openBlock(), createElementBlock("svg", {
           height: $data.radius * 2,
           width: $data.radius * 2
@@ -27393,8 +27393,8 @@ function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-var ProgressBar = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8]]);
-const _sfc_main$7 = {
+var ProgressBar = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9]]);
+const _sfc_main$8 = {
   name: "MessageFile",
   components: { SvgIcon, Loader, ProgressBar },
   props: {
@@ -27457,18 +27457,18 @@ const _sfc_main$7 = {
     }
   }
 };
-const _hoisted_1$7 = { class: "vac-message-file-container" };
+const _hoisted_1$8 = { class: "vac-message-file-container" };
 const _hoisted_2$5 = {
   key: 0,
   class: "vac-image-buttons"
 };
 const _hoisted_3$4 = { controls: "" };
 const _hoisted_4$4 = ["src"];
-function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_progress_bar = resolveComponent("progress-bar");
   const _component_loader = resolveComponent("loader");
   const _component_svg_icon = resolveComponent("svg-icon");
-  return openBlock(), createElementBlock("div", _hoisted_1$7, [
+  return openBlock(), createElementBlock("div", _hoisted_1$8, [
     $options.isImage ? (openBlock(), createElementBlock("div", {
       key: 0,
       ref: "imageRef" + $props.index,
@@ -27547,10 +27547,53 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     ])) : createCommentVNode("", true)
   ]);
 }
-var MessageFile = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7]]);
+var MessageFile = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8]]);
+const _sfc_main$7 = {
+  name: "MessageOtherFiles",
+  props: {
+    currentUserId: { type: [String, Number], required: true },
+    message: { type: Object, required: true },
+    file: { type: Object, required: true },
+    index: { type: Number, required: true },
+    messageSelectionEnabled: { type: Boolean, required: true }
+  },
+  data() {
+    return {
+      imageResponsive: ""
+    };
+  },
+  mounted() {
+    const ref = this.$refs["imageRef" + this.index];
+    if (ref) {
+      this.imageResponsive = {
+        maxHeight: ref.clientWidth - 18,
+        loaderTop: ref.clientHeight / 2 - 9
+      };
+    }
+  },
+  methods: {}
+};
+const _hoisted_1$7 = { class: "vac-message-file-container" };
+function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$7, [
+    createBaseVNode("div", {
+      ref: "imageRef" + $props.index,
+      class: "vac-message-image-container"
+    }, [
+      createBaseVNode("div", {
+        class: "vac-message-image",
+        style: normalizeStyle({
+          "background-image": `url('${$props.file.preview}')`,
+          "max-height": `${$data.imageResponsive.maxHeight}px`
+        })
+      }, null, 4)
+    ], 512)
+  ]);
+}
+var MessageOtherFiles = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7]]);
 const _sfc_main$6 = {
   name: "MessageFiles",
-  components: { SvgIcon, FormatMessage, ProgressBar, MessageFile },
+  components: { SvgIcon, FormatMessage, ProgressBar, MessageFile, MessageOtherFiles },
   props: {
     currentUserId: { type: [String, Number], required: true },
     message: { type: Object, required: true },
